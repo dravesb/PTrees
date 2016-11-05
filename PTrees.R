@@ -10,8 +10,6 @@ prob_reprod = as.numeric(text[which(text[,1]=="prob_reprod"),3])
 min_offspring = as.numeric(text[which(text[,1]=="min_offspring"),3])
 max_offspring = as.numeric(text[which(text[,1]=="max_offspring"),3])
 randoms = as.numeric(text[which(text[,1]=="randoms"),3])
-genetic = as.numeric(text[which(text[,1]=="genetic"),3])
-enviro = as.numeric(text[which(text[,1]=="enviro"),3])
 snps = as.numeric(text[which(text[,1]=="snps"),3])
 
 if(families<1 || families%%1 != 0){
@@ -38,10 +36,6 @@ if(randoms>10000 || randoms%%1 != 0){
 	message("Must have an integer value less than 10000 number of unrelated individuals. Exiting PGEN.")
 	stop()
 }
-if(0>=genetic || genetic>=1 || enviro<=0 || enviro>=1 || (enviro + genetic) != 1){
-	message("Must have standard deviation genetic and enivromental between 0 and 1 summing to 1. Exiting PGEN.")
-	stop()
-}
 if(snps<1000 || snps>100000 || snps%%1 != 0){
 	message("Number of snps cannot exceed 100000 and cannot be less than 1000. Exiting PGEN.")
 	stop()
@@ -56,7 +50,7 @@ system(paste("RScript PGen.R", paste(parameters, collapse = " ")))
 
 
 #PSim
-parameters = as.character(c(fileName,genetic, enviro, snps))
+parameters = as.character(c(fileName, snps))
 system(paste("RScript PSim.R", paste(parameters, collapse = " ")))
 
 
