@@ -1,0 +1,9 @@
+outfile - test
+families - 15 
+generations - 5 
+prob_reprod - 0.5 
+min_offspring - 2
+max_offspring - 5
+randoms - 100 
+snps - 40000
+
