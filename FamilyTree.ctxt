@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=generations
+comment0.target=FamilyTree(int)
+comment1.params=p\ gen
+comment1.target=void\ addPerson(Person,\ int)
+comment2.params=currentGeneration\ prob_reprod\ min_offspring\ max_offspring
+comment2.target=void\ nextGen(int,\ double,\ int,\ int)
+comment3.params=
+comment3.target=java.util.ArrayList\ getFamily()
+numComments=4
