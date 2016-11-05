@@ -1,0 +1,3 @@
+Mäkinen et al. High - throughput pedigree drawing. European Journal of Human Genetics (2005) 13, 987–989. doi:10.1038/sj.ejhg.5201430; published online 4 May 2005.
+
+ Purcell S, Neale B, Todd-Brown K, Thomas L, Ferreira MAR, Bender D, Maller J, Sklar P, de Bakker PIW, Daly MJ & Sham PC (2007). PLINK: a toolset for whole-genome association and population-based linkage analysis. American Journal of Human Genetics, 81.
