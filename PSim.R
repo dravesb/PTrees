@@ -14,7 +14,7 @@ system(paste(paste("cp ", file, sep = ""),PSim_dir,sep=" "))
 #Simulate 
 setwd(PSim_dir)
 source("pipe.r")
-pipe(args[1], args[4])
+pipe(args[1], args[2])
 
 #Move results to outdir
 system(paste("mv ", args[1],".bim ", outdir, sep = ""))
